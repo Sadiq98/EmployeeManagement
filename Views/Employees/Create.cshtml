@@ -3,36 +3,36 @@
 @{
     ViewData["Title"] = "Create";
 }
-    <div class="card">
-        <form asp-action="Create">
+<div class="card">
+    <form asp-action="Create">
         <div class="card-header">
-            <h3>Create Employee</h3>
+            <h3>Create Employee Details</h3>
         </div>
         <div class="card-body">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <div class="row mb-2">
-                    <div class="col-lg-4">
-                        <div class="form-group">
-                            <label asp-for="EmpNo" class="control-label"></label>
-                            <input asp-for="EmpNo" class="form-control" />
-                            <span asp-validation-for="EmpNo" class="text-danger"></span>
-                        </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row mb-2">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="EmpNo" class="control-label"></label>
+                        <input asp-for="EmpNo" class="form-control" />
+                        <span asp-validation-for="EmpNo" class="text-danger"></span>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="form-group">
-                            <label asp-for="FirstName" class="control-label"></label>
-                            <input asp-for="FirstName" class="form-control" />
-                            <span asp-validation-for="FirstName" class="text-danger"></span>
-                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="FirstName" class="control-label"></label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
                     </div>
-                    <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
                     <div class="form-group">
                         <label asp-for="MiddleName" class="control-label"></label>
                         <input asp-for="MiddleName" class="form-control" />
                         <span asp-validation-for="MiddleName" class="text-danger"></span>
                     </div>
-                    </div>
                 </div>
+            </div>
 
             <div class="row mb-2">
                 <div class="col-lg-4">
@@ -81,65 +81,66 @@
                     </div>
                 </div>
             </div>
-                
-                <div class="row mb-2">
-                    <div class="col-lg-4">
+
+            <div class="row mb-2">
+                <div class="col-lg-4">
                     <div class="form-group">
                         <label asp-for="Department" class="control-label">Department</label>
                         <input asp-for="Department" class="form-control" />
                         <span asp-validation-for="Department" class="text-danger"></span>
                     </div>
-                    </div>
-                    <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
                     <div class="form-group">
                         <label asp-for="Designation" class="control-label">Designation</label>
                         <input asp-for="Designation" class="form-control" />
                         <span asp-validation-for="Designation" class="text-danger"></span>
                     </div>
-                    </div>
-                  @*   <div class="col-lg-4">
-                    <div class="form-group">
-                        <label asp-for="CreatedById" class="control-label"></label>
-                        <input asp-for="CreatedById" class="form-control" />
-                        <span asp-validation-for="CreatedById" class="text-danger"></span>
-                    </div>
-                    </div> *@
                 </div>
-                
-@*                 <div class="row">
-                    <div class="col-lg-4">
-                    <div class="form-group">
-                        <label asp-for="CreatedOn" class="control-label"></label>
-                        <input asp-for="CreatedOn" class="form-control" />
-                        <span asp-validation-for="CreatedOn" class="text-danger"></span>
-                    </div>
-                    </div>
-                    <div class="col-lg-4">
-                    <div class="form-group">
-                        <label asp-for="ModifiedById" class="control-label"></label>
-                        <input asp-for="ModifiedById" class="form-control" />
-                        <span asp-validation-for="ModifiedById" class="text-danger"></span>
-                    </div>
-                    </div>
-                    <div class="col-lg-4">
-                    <div class="form-group">
-                        <label asp-for="ModifiedOn" class="control-label"></label>
-                        <input asp-for="ModifiedOn" class="form-control" />
-                        <span asp-validation-for="ModifiedOn" class="text-danger"></span>
-                    </div>
-                    </div>
+                @*   <div class="col-lg-4">
+                <div class="form-group">
+                <label asp-for="CreatedById" class="control-label"></label>
+                <input asp-for="CreatedById" class="form-control" />
+                <span asp-validation-for="CreatedById" class="text-danger"></span>
                 </div>
- *@        
-</div>
-        <div class="card-footer">
-            <a type="submit" value="Create" class="btn btn-primary float-end">Create</a>
-            <a class="btn btn-secondary float-end me-2" asp-action="Index">Back to List</a>
+                </div> *@
+            </div>
 
+            @*                 <div class="row">
+            <div class="col-lg-4">
+            <div class="form-group">
+            <label asp-for="CreatedOn" class="control-label"></label>
+            <input asp-for="CreatedOn" class="form-control" />
+            <span asp-validation-for="CreatedOn" class="text-danger"></span>
+            </div>
+            </div>
+            <div class="col-lg-4">
+            <div class="form-group">
+            <label asp-for="ModifiedById" class="control-label"></label>
+            <input asp-for="ModifiedById" class="form-control" />
+            <span asp-validation-for="ModifiedById" class="text-danger"></span>
+            </div>
+            </div>
+            <div class="col-lg-4">
+            <div class="form-group">
+            <label asp-for="ModifiedOn" class="control-label"></label>
+            <input asp-for="ModifiedOn" class="form-control" />
+            <span asp-validation-for="ModifiedOn" class="text-danger"></span>
+            </div>
+            </div>
+            </div>
+            *@
+        </div>
+        <div class="card-footer">
+            <input type="submit" class="btn btn-primary float-end"></input>
+            <a class="btn btn-secondary float-end me-2" asp-action="Index">Back to List</a>
         </div>
     </form>
-    </div>
+</div>
 
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
